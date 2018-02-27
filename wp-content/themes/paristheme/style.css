@@ -1,0 +1,21 @@
+/*
+Theme Name: Le thème du paris du genre
+Author: CMW
+Description: Test de thème made in CMW
+Template: wp-bootstrap-starter
+*/
+@import url("../wp-bootstrap-starter/style.css");
+
+
+/* FOOTER */
+footer{
+  padding: 10px;
+}
+footer,footer a:hover, footer a{
+  background: #f3f3f3;
+  font-size: 14px;
+  color: #636363;
+}
+footer p{
+  margin: 0;
+}
