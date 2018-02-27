@@ -60,24 +60,18 @@
 	</header><!-- #masthead -->
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
-            <div class="container">
+            <div class="container" id="presentation">
                 <h1>
                     <?php
                     if(get_theme_mod( 'header_banner_title_setting' )){
                         echo get_theme_mod( 'header_banner_title_setting' );
                     }else{
-                        echo 'Wordpress + Bootstrap';
+                        echo 'La ville est-elle un espace genré ?';
                     }
                     ?>
                 </h1>
                 <p>
-                    <?php
-                    if(get_theme_mod( 'header_banner_tagline_setting' )){
-                        echo get_theme_mod( 'header_banner_tagline_setting' );
-                }else{
-                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','wp-bootstrap-starter');
-                    }
-                    ?>
+                    Comment nos identités de genre nous permettent-elles de vivre la ville ? Les études sur la question mettent en avant des variations genrées dans les déplacements, l'appropriation des espaces publics, les représentations symboliques, les dépenses publiques d'aménagement... Ces différences quotidiennes peu visibles mènent-elles à l'égalité ?
                 </p>
                 <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
             </div>
