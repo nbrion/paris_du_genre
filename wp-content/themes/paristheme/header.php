@@ -33,7 +33,7 @@
                             <img src="<?php echo esc_attr(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                         </a>
                     <?php else : ?>
-                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                        <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>">Le(s) Pari(s)<br> du genre</a>
                     <?php endif; ?>
 
                 </div>
@@ -57,26 +57,27 @@
 
             </nav>
         </div>
-	</header><!-- #masthead -->
-    <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
-        <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
-            <div class="container" id="presentation">
-                <h1>
-                    <?php
-                    if(get_theme_mod( 'header_banner_title_setting' )){
-                        echo get_theme_mod( 'header_banner_title_setting' );
-                    }else{
-                        echo 'La ville est-elle un espace genré ?';
-                    }
-                    ?>
-                </h1>
-                <p>
-                    Comment nos identités de genre nous permettent-elles de vivre la ville ? Les études sur la question mettent en avant des variations genrées dans les déplacements, l'appropriation des espaces publics, les représentations symboliques, les dépenses publiques d'aménagement... Ces différences quotidiennes peu visibles mènent-elles à l'égalité ?
-                </p>
-                <a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
+        <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
+            <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
+                <div class="container" id="presentation">
+                    <h1>
+                        <?php
+                        if(get_theme_mod( 'header_banner_title_setting' )){
+                            echo get_theme_mod( 'header_banner_title_setting' );
+                        }else{
+                            echo 'La ville est-elle un espace genré ?';
+                        }
+                        ?>
+                    </h1>
+                    <p>
+                        Comment nos identités de genre nous permettent-elles de vivre la ville ? Les études sur la question mettent en avant des variations genrées dans les déplacements, l'appropriation des espaces publics, les représentations symboliques, les dépenses publiques d'aménagement... Ces différences quotidiennes peu visibles mènent-elles à l'égalité ?
+                    </p>
+                    <a href="#content" class="page-scroller">Enquêtez !</a>
+                </div>
             </div>
-        </div>
-    <?php endif; ?>
+        <?php endif; ?>
+	</header><!-- #masthead -->
+
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">

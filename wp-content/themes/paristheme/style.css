@@ -6,50 +6,217 @@ Template: wp-bootstrap-starter
 */
 @import url("../wp-bootstrap-starter/style.css");
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Anton');
 
+body{
+font-family: 'Lato', sans-serif !important;
+}
+
+header.entry-header{
+  background-image:linear-gradient(#4528AF, #834BC7);
+  display: inline-block;
+  opacity: 0.4;
+  border-bottom-right-radius: 39%;
+}
+h1.entry-title{
+color: #fff;
+font-size: 50px;
+border-bottom : none;
+}
 /* FOOTER */
 footer{
   padding: 10px;
 }
 footer,footer a:hover, footer a{
   background: #f3f3f3;
-  font-size: 14px;
+  font-size: 18px;
   color: #636363;
 }
 footer p{
   margin: 0;
 }
 
+/* HEADER */
+header#masthead.site-header{
+  background-image:linear-gradient(#3A2299, #8C4FCA);
+}
+header #page-sub-header{
+  background: none;
+}
 
+header nav.navbar .navbar-brand .site-title{
+  color : #EBE6F6;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
 
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a{
+  color : #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 0.4;
+}
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover, body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a{
+opacity: 1;
+color:#ffffff;
+}
+header nav ul li a:hover{
+    color : #FC8D6C;
+}
+header nav .dropdown-menu{
+  background-color: transparent;
+  border : none;
+}
+
+/*Home - presentation*/
 #presentation{
     width: 100%;
     color:#EBE6F6;
 }
-#presentation, #thematique{
+#presentation{
     min-height: 100%;
-    padding : 150px 0 0;
 }
 #presentation a{
-    background-color: #FC8D6C;
-    padding: 10px 35px;
-    border-radius: 5px;
+    background-color: #FE8E6C;
+        padding: 5px 45px;
+    border-radius: 8px;
     color:#fff;
     text-decoration: none;
-    -moz-box-shadow:1px 1px 5px 1px #909090;
-    -webkit-box-shadow: 1px 1px 5px 1px #909090;
-    box-shadow:1px 1px 5px 1px #909090;
+    -moz-box-shadow:0px 2px 4px 0px #909090;
+    -webkit-box-shadow: 0px 2px 4px 0px #909090;
+    box-shadow:0px 2px 4px 0px #909090;
     margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
-#presentation h1{
-  font-weight: 600;
+#page-sub-header{
+  text-align: left;
+}
+body:not(.theme-preset-active) #page-sub-header h1{
+  font-weight: bold;
   line-height: 70px;
+  font-size: 36px;
+  color : #fff;
+  text-align: left;
 }
 
-#presentation .container p{
+body:not(.theme-preset-active) #page-sub-header p{
   max-width : 800px;
   width: 100%;
-  margin-bottom: 40px;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
+
+#thematique{
+    width: 100%;
+}
+#thematique h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 38px;
+    color: #4F14BB;
+    padding : 0;
+}
+.theme-all{
+    border-left: 1px solid #949494;
+    border-right: 1px solid #949494;
+    border-bottom: 1px solid #949494;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 0;
+    margin : 0px 15px;
+}
+.theme1{
+    font-size: 12px;
+    position: relative;
+    padding: 0 !important;
+    height: 550px;
+}
+.theme1:nth-child(-n+4){
+    border-right : 1px solid #949494;
+    margin-right: -1px;
+
+}
+.theme1 h3{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.theme1 p{
+    text-align: center;
+    margin: 0 auto;
+    color: #949494;
+}
+
+.theme1 .picto{
+    bottom: 30px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    max-width:50px;
+    left:50%;
+    margin-left: -25px;
+}
+
+.mobilite h3{
+    color: #f1724c;
+}
+.espace-public h3{
+    color:#fc525d;
+}
+.pub h3{
+    color:#5d469a;
+}
+.transmission h3{
+   color:#5520f5;
+}
+.polpub h3{
+    color:#2e29ca;
+}
+.degrade{
+  width: 100%;
+}
+
+
+/*Projet */
+body.page-id-13 #content.site-content, body.page-id-12 #content.site-content, body.page-id-16 #content.site-content{
+  padding-top: 0;
+}
+#quiSommesNous h2, #formation h2, #contact h2{
+  font-size: 38px;
+  font-weight: bold;
+  color: #4F14BB;
+}
+
+#formation .row{
+  text-align: center;
+}
+#formation h3{
+  font-size: 20px;
+  color: #4F14BB;
+  font-weight: lighter;
+}
+#formation ul li.list-group-item{
+  color: #949494;
+  border: none;
+}
+
+/*Sitographie */
+#sitographie .row{
+  text-align: center;
+  margin-top: : 20px ;
+  margin-bottom: 20px;
+}
+#sitographie a{
+  color: #ccc;
   font-weight: lighter;
 }
